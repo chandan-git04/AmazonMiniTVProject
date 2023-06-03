@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AmazonMiniTV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color:black;
+        }
+        b{
+            font-family:Arial,sans-serif;
+        }
+        strong{
+            font-family:Arial,sans-serif;
+            font-size: 15px;
+        }
+        /* navigation bar starts  */
+        .nav1
+        {
+            width: 100%;
+            height:80px;
+            background-color:black;
+            position: relative;
+        }
+        a
+        {
+            padding: 5px;
+            font-size:10px;
+            text-decoration: none;
+        }
+        .hover
+        {
+            padding: 20px;
+            font-size: 20px;
+            top: 10px;
+        }
+        .nav3
+        {
+            position: relative;
+            left:1100px;
+            margin-top: -30px;
+             
+        }
+        .p1
+        {
+            margin-top: 20px;
+            color: white;
+            display: none;
+            background-size: 30px;
+            background-color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+        .nav3:hover p
+        {
+            display: block;
+            color:white;
+        }
+        .nav4
+        {
+            position: relative;
+            left:1180px;
+            margin-top: -44px;    
+        }
+       
+        .p1
+        {
+            color: rgb(196, 196, 196);
+            display: none;
+        }
+        .nav4:hover p
+        {
+           display: block;
+            color:rgb(208, 208, 208);
+        }
+        /* navigation bar complete */
+        /* main slides starts  */
+        .div
+        {
+            overflow: hidden;
+        }
+        .div1
+        {
+            position: relative;
+            width: 500%;
+            margin: 0px;
+            left: 0px;
+            top: 10px;
+            animation: slider  10s  infinite;
+        }
+        #a
+        {
+            float: left;
+            width: 20%;
+        }
+        @keyframes slider
+        {
+            20%  { left: 0; }
+            40%  { left:-100%;} 
+            60%  { left:-200%;}
+            80%  { left:-300%;}
+            100% { left:-400%;}
+        }
+            /* main slides ends  */
+             /* sub slides starts  */
+        .div2
+        {
+             margin-top: 310px;
+             margin-left: 0px;
+        }
+        .sub1
+        {
+            width: 200%;
+            height: 180px;
+            margin: 5px;
+            background-color:black;
+            display: flex;
+        }
+        .sub1 img
+        {
+            margin:0px;
+            width: 19%;height: 150px; float: left;
+            transition: all 0.5s;
+        }
+        .sub1 img:hover
+        {
+           transform: scale(1.2);
+        } 
+        .sub1
+        {
+            position: relative;
+            width: 200%;
+            margin: 0px;
+            top: 50px;
+        }
+        .sub1:hover
+        {
+            animation: slider1  10s  infinite alternate;
+        }
+        .sub1 img
+        {
+            float: left;
+            margin-top: -20px;
+            width: 20%;
+        }
+        @keyframes slider1 
+        {
+            20%{ left: 0;}
+            40%{ left:-50%;} 
+            60%{ left:-100%;}
+        }
+            .div4{ margin-top: 60px;}
+            .div5{ margin-top: 60px;}
+            .div6{ margin-top: 60px;}
+            .div7{ margin-top: 60px;}
+            .div8{ margin-top: 60px;}
+            .div9{ margin-top: 60px;}
+            .div10{ margin-top:60px;}
+            .div11{ margin-top:60px;}
+            .div12{ margin-top:60px;}
+            .div13{margin-top: 60px;}
+            /* sub slides ends  */
+            /* socila media  links  */
+        .div3
+        {
+            width: 100%;
+            height: 300px;
+            background-color: aqua;
+            margin-top: 20px;
+        }
+        .parent2
+        {
+            width: 100%;
+            height: 300px;
+            background-color: black;
+        }
+        .parent2 ul
+        {
+            display: inline-flex;
+            list-style: none;
+            font-size: 20px;
+        }
+        .parent2 ul li
+        {
+            padding: 5px;
+            margin-top: 50px;
+        }
+        .parent2 ul li:hover
+        {
+            display: block;
+        }
+
+        /* social media ends  */
+    </style>
+
+</head>
+<body>
+
+    <div class="nav1">
+        <div class="nav2">
+            <a href=""class="hover"><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTU4IDMyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTIuNTM3MSAyMy4wNDkyQzEyLjE0MSAyMi43MzEyIDEyLjQ5MzUgMjIuMjk1MiAxMi45NjQ4IDIyLjU0MTJDMTguMzc3OSAyNS4zNjAyIDI1LjA2NTUgMjcuMDU4MiAzMS45NzY3IDI3LjA1ODJDMzYuNjM4IDI3LjA1ODIgNDEuNzYyIDI2LjE5MjIgNDYuNDc3OCAyNC40MDIyQzQ3LjE4ODIgMjQuMTMxMiA0Ny43ODM5IDI0LjgyMTIgNDcuMDg4OSAyNS4yODEyQzQyLjg4MzYgMjguMDU5MiAzNi43ODUzIDI5LjUzNjIgMzEuNTM0OCAyOS41MzYyQzI0LjE3NjIgMjkuNTM2MiAxNy41NTIgMjcuMTAyMiAxMi41MzYgMjMuMDQ5MkgxMi41MzcxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQzLjgyNDIgMjIuODM1MUM0Ni4yMzAxIDIxLjMyMTEgNTAuMTc0NiAyMS43NTcxIDUwLjYzMjkgMjIuMjY1MUM1MS4wOTU1IDIyLjc3NTEgNTAuNTExNyAyNi4zMTgxIDQ4LjI1NjQgMjguMDA1MUM0Ny45MDk0IDI4LjI2NzEgNDcuNTc3NyAyOC4xMjcxIDQ3LjczMjYgMjcuNzg1MUM0OC4yNCAyNi42NTAxIDQ5LjM3NyAyNC4xMTExIDQ4LjgzNzkgMjMuNDkyMUM0OC4zMDExIDIyLjg3NTEgNDUuMjgxOSAyMy4xOTkxIDQzLjkyNTYgMjMuMzQ2MUM0My41MTY1IDIzLjM4OTEgNDMuNDUzMiAyMy4wNjgxIDQzLjgyNDIgMjIuODM2MVYyMi44MzUxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTcuNTY1OSA5Ljc3NjEyQzguNjU4MTIgOS43NzYxMiAxMC4wODMxIDEwLjAzNjEgMTAuOTQxOSAxMC43NzMxQzEyLjAzMyAxMS42ODUxIDExLjkyNzIgMTIuOTAxMSAxMS45MjcyIDE0LjIyMzFWMTcuMzQ4MUMxMS45MjcyIDE4LjI4ODEgMTIuMzYzNiAxOC43MDAxIDEyLjc3MjggMTkuMjA4MUMxMi45MTU3IDE5LjM5MTEgMTIuOTQ3NCAxOS42MDgxIDEyLjc2NTEgMTkuNzQxMUMxMi4xODY1IDIwLjE3OTIgMTEuNjEzNiAyMC42MjM1IDExLjA0NjYgMjEuMDc0MUMxMC44OTI4IDIxLjE4MzQgMTAuNjgzMSAyMS4xOTkxIDEwLjUxMiAyMS4xMTQxQzkuNzY5OTggMjAuNTYyMSA5LjYzNDY4IDIwLjMwNTEgOS4yMjc2OSAxOS43NzkxQzcuOTk3OTkgMjAuOTAwMSA3LjEyNzI2IDIxLjIzNTEgNS41MzYzOSAyMS4yMzUxQzMuNjQ4NzMgMjEuMjM2MSAyLjE4MjI1IDIwLjE5NjEgMi4xODIyNSAxOC4xMTIxQzIuMTgyMjUgMTYuNDgzMSAzLjE2NzU0IDE1LjM3NDEgNC41NzE4MyAxNC44MzIxQzUuNzg1MTcgMTQuMzU1MSA3LjQ4NDA2IDE0LjI2ODEgOC43ODM2IDE0LjEzODFWMTMuODc4MUM4Ljc4MzYgMTMuNDAyMSA4LjgyNTA2IDEyLjgzNDEgOC41MTA4MiAxMi40MjIxQzguMjM4MDMgMTIuMDU0MSA3LjcxNDI5IDExLjkwMTEgNy4yNTM4MyAxMS45MDExQzYuNDAwNTcgMTEuOTAxMSA1LjY0MDA1IDEyLjI5MzEgNS40NTIzNyAxMy4xMDYxQzUuNDEzMDkgMTMuMjg3MSA1LjI2Njg4IDEzLjQ2NjEgNS4wNjM5MyAxMy40NzQxTDIuODkyNTggMTMuMjY0MUMyLjcwOTI3IDEzLjIyNzEgMi41MDUyMyAxMy4wOTUxIDIuNTU4NjkgMTIuODQ2MUMzLjA0MTI1IDEwLjU2MjMgNS4yODU1MiA5LjgyMzY1IDcuMzYwMTYgOS43NzgzN0w3LjU2NTkgOS43NzYxMlpNOC43ODM2IDE1Ljc0MzFDNy4xNjMyNyAxNS43NDMxIDUuNDUwMTkgMTYuMDU0MSA1LjQ1MDE5IDE3Ljc2MzFDNS40NTAxOSAxOC42MzExIDUuOTUzMiAxOS4yMTgxIDYuODE0MTEgMTkuMjE4MUM3LjQ0MjYgMTkuMjE4MSA4LjAwODkgMTguODcxMSA4LjM2NDYxIDE4LjMwNTFDOC44MDMyNCAxNy42MTExIDguNzgzNiAxNi45NjAxIDguNzgzNiAxNi4xNzkxVjE1Ljc0MzFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTguNTY2NSA5Ljg3MzA1QzYxLjg5MjIgOS44NzMwNSA2My42OTE1IDEyLjQzIDYzLjY5MTUgMTUuNjc5QzYzLjY5MTUgMTguODE5IDYxLjcwNDYgMjEuMzExIDU4LjU2NjUgMjEuMzExQzU1LjMwNCAyMS4zMTEgNTMuNTI3NiAxOC43NTUgNTMuNTI3NiAxNS41NzFDNTMuNTI3NiAxMi4zNjQgNTUuMzI1OCA5Ljg3MzA1IDU4LjU2NjUgOS44NzMwNVpNNTguNTg3MiAxMS45NzRDNTYuOTkzMyAxMS45NzQgNTYuODM5NiAxMy44NTI1IDU2LjgzMDkgMTUuMTEzNEw1Ni44MzA1IDE1LjUwNkM1Ni44MzQ5IDE2LjgzNiA1Ni45MjQzIDE5LjE4NyA1OC41NjU0IDE5LjE4N0M2MC4zMDM2IDE5LjE4NyA2MC4zODU0IDE3LjAyMiA2MC4zODU0IDE1LjdDNjAuMzg1NCAxNC44MzQgNjAuMzQ1IDEzLjc5NCA2MC4wNTE1IDEyLjk3MkM1OS43OTk1IDEyLjI1NiA1OS4yOTg2IDExLjk3NSA1OC41ODcyIDExLjk3NVYxMS45NzRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzYuOTM3IDkuNzc2MTJDMzguMDI4MSA5Ljc3NjEyIDM5LjQ1MSAxMC4wMzYxIDQwLjMxMDggMTAuNzczMUM0MS4zNDEzIDExLjYzNDUgNDEuMzA0MSAxMi43NjcgNDEuMjk2OCAxNC4wMDM4TDQxLjI5NjEgMTcuMzQ4MUM0MS4yOTYxIDE4LjI4ODEgNDEuNzMyNSAxOC43MDAxIDQyLjE0MTcgMTkuMjA4MUM0Mi4yODM1IDE5LjM5MTEgNDIuMzE2MyAxOS42MDgxIDQyLjEzNDEgMTkuNzQxMUM0MS45NjIyIDE5Ljg2OTQgNDEuNzQwNiAyMC4wMzg4IDQxLjUwNzIgMjAuMjE5M0w0MS4wMzU4IDIwLjU4NjFDNDAuODAzNCAyMC43Njc5IDQwLjU4NDQgMjAuOTQwNiA0MC40MTY2IDIxLjA3NDFDNDAuMjYyNyAyMS4xODMgNDAuMDUzNSAyMS4xOTkgMzkuODgyIDIxLjExNTFDMzkuMTM2NyAyMC41NjIxIDM5LjAwMzYgMjAuMzA1MSAzOC41OTc3IDE5Ljc3OTFDMzcuMzY4IDIwLjkwMDEgMzYuNDk2MiAyMS4yMzUxIDM0LjkwMiAyMS4yMzUxQzMzLjAxNzYgMjEuMjM1MSAzMS41NTIyIDIwLjE5NTEgMzEuNTUyMiAxOC4xMTIxQzMxLjU1MjIgMTYuNDgzMSAzMi41MzQzIDE1LjM3MzEgMzMuOTM5NiAxNC44MzExQzM1LjE1NjMgMTQuMzU1MSAzNi44NTMgMTQuMjY4MSAzOC4xNTE0IDE0LjEzODFWMTMuODc4MUMzOC4xNTE0IDEzLjQwMjEgMzguMTk1MSAxMi44MzUxIDM3Ljg3ODYgMTIuNDIyMUMzNy42MDU5IDEyLjA1NDEgMzcuMDgyMSAxMS45MDIxIDM2LjYyMzggMTEuOTAyMUMzNS43NjczIDExLjkwMjEgMzUuMDA3OSAxMi4yOTQxIDM0LjgyMjQgMTMuMTA2MUMzNC43ODA5IDEzLjI4NzEgMzQuNjM1OCAxMy40NjYxIDM0LjQzMjggMTMuNDc1MUwzMi4yNjE1IDEzLjI2MzFDMzIuMDc2IDEzLjIyNzEgMzEuODczIDEzLjA5NTEgMzEuOTI1NCAxMi44NDYxQzMyLjQyNTIgMTAuNDg2MSAzNC44MDM4IDkuNzc2MTIgMzYuOTM3IDkuNzc2MTJaTTM4LjE1MjUgMTUuNzQ0MUMzNi41MzExIDE1Ljc0NDEgMzQuODE5MSAxNi4wNTQxIDM0LjgxOTEgMTcuNzY0MUMzNC44MTkxIDE4LjYzMTEgMzUuMzIzMiAxOS4yMTkxIDM2LjE4MyAxOS4yMTkxQzM2LjgxMDQgMTkuMjE5MSAzNy4zNzU2IDE4Ljg3MTEgMzcuNzMyNCAxOC4zMDUxQzM4LjE3MzIgMTcuNjExMSAzOC4xNTE0IDE2Ljk2MDEgMzguMTUxNCAxNi4xNzkxTDM4LjE1MjUgMTUuNzQ0MVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNi40NDAzIDkuODczMDVDMjcuMzc5NyA5Ljg3MzA1IDI4LjQwNjUgMTAuMjIyIDI5LjAzMjggMTEuMDAxQzI5Ljc0MzEgMTEuODY1IDI5LjU5OCAxMy4xMjQgMjkuNTk4IDE0LjIyN0wyOS41OTU4IDIwLjcyNEMyOS41OTU4IDIwLjkzMSAyOS40MDE2IDIxLjA5NCAyOS4xNjU5IDIxLjA5NEgyNi45MjY5QzI2LjcwNjkgMjEuMDg5OCAyNi41Mjk1IDIwLjkyNzcgMjYuNTI0MyAyMC43MjZMMjYuNTIzMiAxNS4yNjZDMjYuNTIzMiAxNC44MzQgMjYuNTY1OCAxMy43NSAyNi40NjEgMTMuMzM5QzI2LjI5MyAxMi42NDUgMjUuNzkxMSAxMi40NTEgMjUuMTQ0IDEyLjQ1MUMyNC41NTQgMTIuNDYzMiAyNC4wMjc5IDEyLjc5NDYgMjMuODA0MSAxMy4yOTVDMjMuNjI1MiAxMy43MDEgMjMuNTk3OSAxNC4zMTUgMjMuNTk0NiAxNC44NDJWMjAuNzI0QzIzLjU5NDYgMjAuOTMxIDIzLjQwMjYgMjEuMDk0IDIzLjE2MzYgMjEuMDk0SDIwLjkyNjhDMjAuNzA2OCAyMS4wODkzIDIwLjUyOTQgMjAuOTI3NiAyMC41MjMxIDIwLjcyNkwyMC41MjA5IDE1LjI2NkMyMC41MjA5IDE1LjEwMyAyMC41MjUzIDE0LjkyOCAyMC41Mjc0IDE0Ljc0OEwyMC41Mjk2IDE0LjQ3NkMyMC41Mjg1IDEzLjQ3MiAyMC4zOTEgMTIuNDMgMTkuMTQyOCAxMi40M0MxNy43MDI1IDEyLjQzIDE3LjU5OTkgMTMuNzQzIDE3LjU5MzQgMTQuODcxVjIwLjcyNEMxNy41OTM0IDIwLjkzMSAxNy4zOTkyIDIxLjA5NCAxNy4xNjAyIDIxLjA5NEgxNC45MjAxQzE0LjcxMzcgMjEuMDg4MiAxNC41NDM1IDIwLjk0NDEgMTQuNTIwOCAyMC43NTZWMTAuNDZDMTQuNTIwOCAxMC4yNTUgMTQuNzE1IDEwLjA5IDE0Ljk1MzkgMTAuMDlIMTcuMDQwMkMxNy4yNTg0IDEwLjEwMiAxNy40MzMgMTAuMjQ4IDE3LjQ0NzIgMTAuNDM3VjExLjc4SDE3LjQ4OTdDMTguMDMyIDEwLjQ4IDE5LjA1NzcgOS44NzMwNSAyMC40MzggOS44NzMwNUMyMS44MzkgOS44NzMwNSAyMi43MTczIDEwLjQ4IDIzLjM0NTggMTEuNzhDMjMuODg5MiAxMC40OCAyNS4xMjExIDkuODczMDUgMjYuNDM5MiA5Ljg3MzA1SDI2LjQ0MDNaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNzEuMzY2NSA5Ljg3MzA1QzcyLjM3MDQgOS44NzMwNSA3My4zNTM1IDEwLjE5OSA3My45Nzk4IDExLjA4OEM3NC41NjY4IDExLjkxMSA3NC41NjY4IDEzLjI5NSA3NC41NjY4IDE0LjI5MVYyMC43NjlDNzQuNTQxNyAyMC45NTQgNzQuMzU5NSAyMS4wOTQgNzQuMTM2OSAyMS4wOTRINzEuODkwM0M3MS42ODkyIDIxLjA4ODMgNzEuNTIxNSAyMC45NTE0IDcxLjQ5MiAyMC43NjlWMTUuMDU5QzcxLjUwMDcgMTMuOTM5IDcxLjU4NDggMTIuNDA5IDcwLjA5MSAxMi40MDlDNjkuNTQ2NSAxMi40MDkgNjkuMDQ0NiAxMi43MzQgNjguNzk1OCAxMy4yMzFDNjguNDc5NCAxMy44NTkgNjguNDM5IDE0LjQ4OSA2OC40MzkgMTUuMTgxVjIwLjcyNEM2OC40MzQ2IDIwLjkzMSA2OC4yNDA0IDIxLjA5NCA2OC4wMDI2IDIxLjA5NEg2NS43NzEyQzY1LjU1MTIgMjEuMDg5OCA2NS4zNzM4IDIwLjkyNzcgNjUuMzY4NiAyMC43MjZMNjUuMzY0MiAxMC40MjVDNjUuMzgyNyAxMC4yMzcgNjUuNTcwNCAxMC4wOTEgNjUuNzk0MSAxMC4wOTFINjcuODcyN0M2OC4wNjkxIDEwLjEwMSA2OC4yMjk1IDEwLjIxNyA2OC4yNzIxIDEwLjM4MVYxMS45NTRINjguMzEyNEM2OC45NDA5IDEwLjU0NCA2OS44MTkzIDkuODc0MDUgNzEuMzY2NSA5Ljg3NDA1VjkuODczMDVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTEuODAyNiAxMC4wNjMxQzUyLjAzOTMgMTAuMDYzMSA1Mi4yMjgxIDEwLjIxNzEgNTIuMjI4MSAxMC40MzUxVjExLjY5NzFDNTIuMjI0OCAxMS45MDkxIDUyLjAyNjIgMTIuMTgzMSA1MS42NzM4IDEyLjYyMzFMNDcuODU3IDE3LjQ5NjFDNDkuMjczMyAxNy40NjgxIDUwLjc3MDQgMTcuNjU3MSA1Mi4wNTc5IDE4LjMwNDFDNTIuMzQ3IDE4LjQ1MTEgNTIuNDI1NiAxOC42NjcxIDUyLjQ0ODUgMTguODgxMVYyMC40NDcxQzUyLjQ0ODUgMjAuNjY1MSA1Mi4xODQ1IDIwLjkxNTEgNTEuOTA2MiAyMC43ODQxQzQ5LjYzOTkgMTkuNzIxMSA0Ni42MzE3IDE5LjYwNDEgNDQuMTI0MyAyMC43OTcxQzQzLjg2ODkgMjAuOTIwMSA0My42MDA1IDIwLjY3NTEgNDMuNjAwNSAyMC40NTcxVjE4Ljk2NjFDNDMuNjAwNSAxOC43MjgxIDQzLjYwNiAxOC4zMTgxIDQzLjg3NDQgMTcuOTUzMUw0OC4yOTQ2IDEyLjI4MDFINDQuNDQ2MkM0NC4yMTE2IDEyLjI4MDEgNDQuMDIyOCAxMi4xMjgxIDQ0LjAyMDYgMTEuOTEwMVYxMC40MzYxQzQ0LjAxODcgMTAuMzM1IDQ0LjA2MjQgMTAuMjM3OCA0NC4xNDEyIDEwLjE2NzJDNDQuMjIwMSAxMC4wOTY2IDQ0LjMyNzMgMTAuMDU4OSA0NC40Mzc0IDEwLjA2MzFINTEuODAyNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik05My4zODc4IDIxVjEzLjQ4OEM5My4zODc4IDEyLjUwMzggOTIuOTQ2NCAxMi4wMTE2IDkyLjA2MzUgMTIuMDExNkM5MS4yODE5IDEyLjAxMTYgOTAuNDkzIDEyLjE5OTggODkuNjk3IDEyLjU3NjFWMTIuNzkzMlYyMUg4Ni41MjcyVjEzLjQ4OEM4Ni41MjcyIDEyLjUwMzggODYuMDg1NyAxMi4wMTE2IDg1LjIwMjggMTIuMDExNkM4NC4zOTIyIDEyLjAxMTYgODMuNTk2MiAxMi4yMDcgODIuODE0NiAxMi41OTc4VjIxSDc5LjY0NDhWOS45MDU2OEg4Mi4yNTAxTDgyLjUzMjMgMTAuOTY5NUM4My4yOTk1IDEwLjQ2MjkgODMuOTg3IDEwLjEwODMgODQuNTk0OSA5LjkwNTY4Qzg1LjIxNzMgOS42ODg1NyA4NS44NTQxIDkuNTgwMDEgODYuNTA1NCA5LjU4MDAxQzg3LjgwODEgOS41ODAwMSA4OC43MjcyIDEwLjA0MzIgODkuMjYyNyAxMC45Njk1QzkwLjAwMDkgMTAuNDc3NCA5MC42OTU3IDEwLjEyMjggOTEuMzQ3IDkuOTA1NjhDOTEuOTk4MyA5LjY4ODU3IDkyLjY3MTQgOS41ODAwMSA5My4zNjYxIDkuNTgwMDFDOTQuMzc5MyA5LjU4MDAxIDk1LjE2MDkgOS44NjIyNiA5NS43MTA5IDEwLjQyNjdDOTYuMjc1NCAxMC45OTEyIDk2LjU1NzYgMTEuNzgwMSA5Ni41NTc2IDEyLjc5MzJWMjFIOTMuMzg3OFpNOTkuNjQwNCAyMVY5LjkwNTY4SDEwMi44MVYyMUg5OS42NDA0Wk0xMDEuMjI1IDguMTkwNTFDMTAwLjY3NSA4LjE5MDUxIDEwMC4yMzQgOC4wMzg1MyA5OS45MDEgNy43MzQ1OEM5OS41NjgxIDcuNDMwNjIgOTkuNDAxNiA3LjAxODExIDk5LjQwMTYgNi40OTcwNUM5OS40MDE2IDUuOTc1OTkgOTkuNTY4MSA1LjU2MzQ4IDk5LjkwMSA1LjI1OTUyQzEwMC4yMzQgNC45NTU1NyAxMDAuNjc1IDQuODAzNTkgMTAxLjIyNSA0LjgwMzU5QzEwMS43NzUgNC44MDM1OSAxMDIuMjE3IDQuOTU1NTcgMTAyLjU1IDUuMjU5NTJDMTAyLjg4MyA1LjU2MzQ4IDEwMy4wNDkgNS45NzU5OSAxMDMuMDQ5IDYuNDk3MDVDMTAzLjA0OSA3LjAxODExIDEwMi44ODMgNy40MzA2MiAxMDIuNTUgNy43MzQ1OEMxMDIuMjE3IDguMDM4NTMgMTAxLjc3NSA4LjE5MDUxIDEwMS4yMjUgOC4xOTA1MVpNMTEzLjA1NyAyMVYxMy43MjY4QzExMy4wNTcgMTMuMTMzNCAxMTIuOTI2IDEyLjY5OTIgMTEyLjY2NiAxMi40MjQyQzExMi40MDUgMTIuMTQ5MSAxMTIuMDA3IDEyLjAxMTYgMTExLjQ3MiAxMi4wMTE2QzExMC42NzYgMTIuMDExNiAxMDkuODg3IDEyLjI1NzcgMTA5LjEwNSAxMi43NDk4VjIxSDEwNS45MzVWOS45MDU2OEgxMDguNTQxTDEwOC44NDUgMTEuMDk5OEMxMTAuMTQ3IDEwLjA4NjYgMTExLjUzNyA5LjU4MDAxIDExMy4wMTMgOS41ODAwMUMxMTQuMDQxIDkuNTgwMDEgMTE0LjgzIDkuODYyMjYgMTE1LjM4IDEwLjQyNjdDMTE1Ljk0NCAxMC45NzY4IDExNi4yMjYgMTEuNzY1NiAxMTYuMjI2IDEyLjc5MzJWMjFIMTEzLjA1N1pNMTE5LjMxNiAyMVY5LjkwNTY4SDEyMi40ODZWMjFIMTE5LjMxNlpNMTIwLjkwMSA4LjE5MDUxQzEyMC4zNTEgOC4xOTA1MSAxMTkuOTA5IDguMDM4NTMgMTE5LjU3NyA3LjczNDU4QzExOS4yNDQgNy40MzA2MiAxMTkuMDc3IDcuMDE4MTEgMTE5LjA3NyA2LjQ5NzA1QzExOS4wNzcgNS45NzU5OSAxMTkuMjQ0IDUuNTYzNDggMTE5LjU3NyA1LjI1OTUyQzExOS45MDkgNC45NTU1NyAxMjAuMzUxIDQuODAzNTkgMTIwLjkwMSA0LjgwMzU5QzEyMS40NTEgNC44MDM1OSAxMjEuODkyIDQuOTU1NTcgMTIyLjIyNSA1LjI1OTUyQzEyMi41NTggNS41NjM0OCAxMjIuNzI1IDUuOTc1OTkgMTIyLjcyNSA2LjQ5NzA1QzEyMi43MjUgNy4wMTgxMSAxMjIuNTU4IDcuNDMwNjIgMTIyLjIyNSA3LjczNDU4QzEyMS44OTIgOC4wMzg1MyAxMjEuNDUxIDguMTkwNTEgMTIwLjkwMSA4LjE5MDUxWk0xMjguOTMzIDIxVjguNTU5NkgxMjQuMzUyVjUuOTU0MjhIMTM2Ljc3VjguNTU5NkgxMzIuMTg5VjIxSDEyOC45MzNaTTE0My4xNTMgMjFMMTM3LjgxMiA1Ljk1NDI4SDE0MS40MTZMMTQ0LjkzMyAxNy44MDg1TDE0OC40MjkgNS45NTQyOEgxNTEuOTQ2TDE0Ni42MDUgMjFIMTQzLjE1M1oiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8yNjRfMzU1KSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzI2NF8zNTUiIHgxPSIxNTYuMjUiIHkxPSIwIiB4Mj0iNzguMTI1IiB5Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRTkwQjhDIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0QyMUY0OSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPg==" style="width:170px; height:42px; margin-top: 17px; margin-bottom: -19px; margin-left: 20px; background-color: transparent;"></a>
+            <a href="https://www.amazon.in/minitv" target="_blank" class="hover" style="color: rgb(223,22,117);"><strong>Home</strong></a>
+            <a href="https://www.amazon.in/minitv/ct/web-series" target="_blank" class="hover" style="color:white;"><strong>Web Series</strong></a>
+            <a href="https://www.amazon.in/minitv/ct/mini-movies"target="_blank"  class="hover" style="color:white;"><strong>mini Movies</strong></a>
+            <a href="https://www.amazon.in/minitv/ct/comedy" target="_blank"  class="hover" style="color:white;"><strong>Comedy</strong></a>
+        </div>
+        <div class="nav3">
+           <a href="https://www.amazon.in/" target="_blank"  class="a"><i class="fa fa-amazon" style="color: orange; font-size: 22px;"></i></a>
+           <p>Go To Amazon</p>
+        </div>
+        <div class="nav4">
+            <a href="" class="a"><i class="fa fa-gear" style="color: white;font-size: 22px;"></i></a>
+            <p>Parental Control<br></p>
+            <p>Delete your miniTV Data</p>
+            </div>
+            <div class="div1">
+                <div>
+                    <a href="https://www.amazon.in/minitv/tp/5cf7a5b5-51f1-4bf9-a13c-39502bb162bf" target="_blank"><img id="a" src="https://m.media-amazon.com/images/S/sonata-images-prod/ATV_IN_Desktop_GGVF/d62ba429-928f-4bb0-962d-c5465f8f858b.__SX2090.00004529953__SY418.000009059906__QL60__._TTH_.jpeg" alt=""></a>
+                    <a href="https://www.amazon.in/minitv/tp/cab88d39-4769-4a48-8d54-26e07bf6ccd1" target="_blank"><img id="a" src="https://m.media-amazon.com/images/S/sonata-images-prod/ATV_IN_Desktop_Home_YMFS2_Review/eabd5767-5926-4a71-8b6d-76752c60f719.__SX2090.00004529953__SY418.000009059906__QL60__._TTH_.jpeg" alt=""></a>
+                    <a href="https://www.amazon.in/minitv/tp/9fdbdeeb-f6cf-47b0-942b-7dcda3ceb7e2" target="_blank"><img id="a" src="https://m.media-amazon.com/images/S/sonata-images-prod/ATV_IN_Desktop_Staffroom_vf/24edb03b-f6a3-4534-8acf-25444325a8da.__SX2090.00004529953__SY418.000009059906__QL60__._TTH_.jpeg" alt=""></a>
+                    <a href="https://www.amazon.in/minitv/tp/a9166336-17d3-4bb3-b529-f591b35a8520" target="_blank"><img id="a" src="https://m.media-amazon.com/images/S/sonata-images-prod/ATV_IN_Desktop_Hunter_VF/858366fe-4b9d-4147-867b-f8f3e330bc46.__SX2090.00004529953__SY418.000009059906__QL60__._TTH_.jpeg" alt=""></a>
+                    <a href="https://www.amazon.in/minitv/tp/e41afa30-0a63-4432-a047-2ab2fd016024" target="_blank"><img id="a" src="https://m.media-amazon.com/images/S/sonata-images-prod/ATV_IN_Desktop_Haunting_V1/4848b6b3-c950-4bdd-b3c1-2a3e5d8456dd.__SX2090.00004529953__SY418.000009059906__QL60__._TTH_.jpeg" alt=""></a>
+                </div>
+                </div>
+
+                 <!-- sub slides starts  -->
+                <div class="div2">
+                <div class="x" style="color: aliceblue;font-size: 20px; margin-left: 30px;"><b>Trending Top 10 on miniTV<b></div>
+                <div class="sub1">
+                      <a href="https://www.amazon.in/minitv/tp/53e84807-e889-4634-a5fc-8c903fb3b587" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/db99b568369de672dd1cd52a500600545ba39189b67fb23625f69156e275a1eb.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                      <a href="https://www.amazon.in/minitv/tp/5cf7a5b5-51f1-4bf9-a13c-39502bb162bf" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/4dcbaaca92619fe455e481a354a7512dfa4da701b459bba7baf0e770e47ee372.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                      <a href="https://www.amazon.in/minitv/tp/3ff89859-954d-415f-a71a-f41b4a69975a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/2e78057af8eeb7845abdfa48eaee06986f62b2451e88294b1e2907dfc1de89e6.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                      <a href="https://www.amazon.in/minitv/tp/9fdbdeeb-f6cf-47b0-942b-7dcda3ceb7e2" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/8549d47bbd7a9b82612540fc10c9fc9cc9f8b4f7952914351d10a85e9c61515c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                      <a href="https://www.amazon.in/minitv/tp/97a9fc97-4ad4-4b11-b237-f0fd3ba96cc3" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/0b6d7d2306fc52d879ed074353befce1c2be81884712c3166b95e9b65bfa12f8.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                      <a href="https://www.amazon.in/minitv/tp/20331016-d9b9-4968-b991-c89fa4927a36" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/c21d8865557e94879c2b7e912a4efddd3a1fff2aabb8df7b00222d045bc57a5f.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                      <a href="https://www.amazon.in/minitv/tp/80abcb2d-9067-4b35-b4a3-af93a6636172" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/4f603f4bafd0150f63b0a1504cb8700bad21f0e2240d5c629811d36cd4e13bdb.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                      <a href="https://www.amazon.in/minitv/tp/51676b21-1ad8-457d-94d2-a460b7e7b341" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/f20816870190db0032f30c4afc754d60774574a73feb5992a0e689adceff0419.__SX612__SY345__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                      <a href="https://www.amazon.in/minitv/tp/2de3908c-f305-43af-bc67-f14bd10c4373" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/45bdabe394095dd9640c498c438dee5c3aeb72f66199153d12ec0a392c740dae.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                      <a href="https://www.amazon.in/minitv/tp/d6f5b593-753f-4e08-abfe-ad9d71b4afdc" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/7d0d637d8e7eb2bc662509a59bd4f8ecdbd15fddb0dc8516ad6cace199c856dc.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+               </div>
+            </div>
+
+                <div class="div4">
+                <div class="x" style="color: aliceblue; font-size: 20px;margin-left: 30px;"><b>Popular Web Series</b></div>
+                <div class="sub1">
+                   <a href="https://www.amazon.in/minitv/tp/98bc48cf-c3f7-6def-ed9b-dee974615c25" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/bf54943d50645e1fe9ac0e193d81f6624bedc5ad09888f69189ce6332d6e4f56.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/3f167cf9-8b9c-498a-9635-4759c1f2b79b" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/e551b0d4cb35f6b6d4e7af6b1c92fc84ac9bf418cfeed87c77357ed3d4045de7.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/54868701-6e59-4d5d-928d-729e12625d27" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/92d1e287d717cb4a478a7e5781bd45d8b6dc279507cfc8111f74d541d1a9a343.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/9534dd7e-bc63-4994-be25-218d65f2f42d" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/e40c15c1f6160e9b67170877003f2845accc076e778646049fdbd848036c6860.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/97bc2b60-d9a7-4e8f-8364-e8141d1957c3" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/da45684e5faa29fe1e82d703f3fc17f617f179566c6ae53a5f07c25ab2900702.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/36bbefcc-7aa9-06c7-2704-535e8f8f0a9a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/954d9eced0c599a189303f202b365f216366bc46ee490ea12d89515755a792c0.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/1a226a2c-395d-4c43-894d-0a821b9d2d1d" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/daddd6a80ee5823eebc360a9c0eb5ca12d815c0e18a30988484b9774df2e5867.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/720a15c8-0aed-466a-a9ab-d1caa7ad42e1" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/bd825605bf8911971b4040d0c6d4b9d57a2b1f61a31c604dca18445396f0e8f9.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/debbf698-583d-e7f3-20ea-bc487c8c7bea" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/b3cc5796dfccecf9ba4c1fc2b4fdcb5aea03a8fec3a250b0425af02a14af3f8f.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/3a439908-add7-43be-baff-43df5944bfcd" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/70455ddcfc42bd66390b98616c0aeae5e8219f3f05d7798afa9906313a6f767c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" style="width: 280px; height: 160px;"></a>
+                </div>
+                </div>
+
+                <div class="div5">
+                <div class="x" style="color: aliceblue; font-size: 20px;margin-left: 30px;"><b>Horror,Thriller & Mystery</b></div>
+                <div class="sub1">
+                    <a href="https://www.amazon.in/minitv/tp/97bc2b60-d9a7-4e8f-8364-e8141d1957c3" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/da45684e5faa29fe1e82d703f3fc17f617f179566c6ae53a5f07c25ab2900702.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/3ff89859-954d-415f-a71a-f41b4a69975a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/2e78057af8eeb7845abdfa48eaee06986f62b2451e88294b1e2907dfc1de89e6.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/53e84807-e889-4634-a5fc-8c903fb3b587" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/db99b568369de672dd1cd52a500600545ba39189b67fb23625f69156e275a1eb.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/74271cb6-e19e-445b-a648-e15a3912b8ef" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/d658b9a6703804679abf3034eecf1aed155292a7a60a6adf1484872507e77f6e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/68c8b283-8cd6-4140-a497-66a5a20ffe34" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/1f6db62f930916472e624753a337e9bb9c4e29d385103510ac485471fc4a713c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/e41afa30-0a63-4432-a047-2ab2fd016024" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/469e4c0a1f21514d3979b21aa22bc6f794e4726ba6b13bf5044de7b5c328db9b.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/97bc2b60-d9a7-4e8f-8364-e8141d1957c3" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/da45684e5faa29fe1e82d703f3fc17f617f179566c6ae53a5f07c25ab2900702.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/3ff89859-954d-415f-a71a-f41b4a69975a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/2e78057af8eeb7845abdfa48eaee06986f62b2451e88294b1e2907dfc1de89e6.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/74271cb6-e19e-445b-a648-e15a3912b8ef" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/d658b9a6703804679abf3034eecf1aed155292a7a60a6adf1484872507e77f6e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/68c8b283-8cd6-4140-a497-66a5a20ffe34" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/1f6db62f930916472e624753a337e9bb9c4e29d385103510ac485471fc4a713c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+
+
+
+
+                </div>
+                </div>
+
+                <div class="div6">
+                <div class="x" style="color: aliceblue;font-size: 20px;margin-left: 30px;"><b>Classic Hits - Shows We all Love!</b></div>
+                <div class="sub1">
+                   <a href="https://www.amazon.in/minitv/tp/99febc8a-11ca-4337-ad45-3a6d2b529efb" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/302964d62c2c5a4b3e04135fbc88a26da795ed51d5f5c8643f45435c8b8a9054.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/dfc52079-3c3f-43d9-806d-02171d636838" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/f8b93c4a4874a7a3a6197866d2b76848c5a5c780d7259a1bdb6b7de42512d7c3.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/0f596073-6738-4a4d-b256-ff816df62c32" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/efb084f453208a600a2f2830d2039c761d1de77280c706dd6af7411a8a32f500.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 170px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/97a9fc97-4ad4-4b11-b237-f0fd3ba96cc3" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/0b6d7d2306fc52d879ed074353befce1c2be81884712c3166b95e9b65bfa12f8.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/12eb62f8-1d76-436b-8f3a-e0dca68e52fc" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/4524df59b8e408fc35106fce1ddbc496fad69e47ac2f5110d4d61508c753c29e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/a7081cb6-2d9c-4fe8-8014-b0a48433cf6a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/7bab031c7c38d67119e1af7b707525360a0bec8affe5f319236967877a40d1ac.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/89566a99-e58a-4d38-9d5d-63fe8b0b0c33" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/7604e6df3b848219e791d1605c8f142ecafda124cae2d4f577d5758516420e39.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/74bbdfd6-8f19-0f8a-2ac7-2e4be3868227" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/8e8ad9669884c8f9c87e663c670fdbe925fcebccf5fd71adb99d0ee53dc3d842.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/2de3908c-f305-43af-bc67-f14bd10c4373" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/45bdabe394095dd9640c498c438dee5c3aeb72f66199153d12ec0a392c740dae.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/c6bbdff2-880e-c425-3185-e5acf96212f2" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/e2dca4fc4b9241cd31e49afd71797d996e8a2fd5b02748dc957bf633c9c2a9ca.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+
+
+                </div>
+                </div>
+
+                <div class="div7">
+                <div class="x" style="color: aliceblue;font-size: 20px;margin-left: 30px;"><b>Most Loved Videos</b></div>
+                <div class="sub1">
+                   <a href="https://www.amazon.in/minitv/tp/c6bbdff2-880e-c425-3185-e5acf96212f2" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/e2dca4fc4b9241cd31e49afd71797d996e8a2fd5b02748dc957bf633c9c2a9ca.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/7de8c022-c089-4260-9001-dcc2b25087fe" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/bc0daacb00a467641b56dbdc61b3a7877c1a5dc7c518e6c33c56af8460b3c03e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/e41afa30-0a63-4432-a047-2ab2fd016024" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/469e4c0a1f21514d3979b21aa22bc6f794e4726ba6b13bf5044de7b5c328db9b.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/cdd3896a-f084-4274-8b7e-d5d0b3afe7ca" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/96177a143132735cf046d07d278020f01b8adfeab4bba23cff1d299a17cec08e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/dec3c835-ea44-48d7-a63a-7e1912c94e15" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/3ac87db700ae6e8e5cc2674baa23b9a87aed68935e32d671ed00cd3138490d1e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/debbf698-583d-e7f3-20ea-bc487c8c7bea" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/b3cc5796dfccecf9ba4c1fc2b4fdcb5aea03a8fec3a250b0425af02a14af3f8f.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/20331016-d9b9-4968-b991-c89fa4927a36" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/c21d8865557e94879c2b7e912a4efddd3a1fff2aabb8df7b00222d045bc57a5f.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/d4ca34f1-1434-4438-8492-453f71ef7c07" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/1de1f70889d8b47dac283982205153c3fe43f178e8d2d621442cc49a66933e88.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/2a68e8bd-755d-4545-a4f6-710bd0d15840" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/9d178417220dfe3e495ca45fd9f0ca472279d14e574d5df355401b291313705d.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/36cb4081-de08-4228-9e86-445cab4928c9" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/2ced239b906102ccc6857d9c212e4dd74191b01c3686433ed062ea052e60d7b6.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                </div>
+                </div>
+
+            <div class="div8">
+            <div class="x" style="color: aliceblue;font-size: 20px;margin-left: 30px;"><b>Top-Picks for You</b></div>
+            <div class="sub1">
+                   <a href="https://www.amazon.in/minitv/tp/9c8353da-49dd-4476-aa26-3771315f660a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/8d12221f8d05d01d22363aefe9c5f4ccacd24a45c0061c90d587ab5e9ef41631.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/0cbc465b-71da-f006-088a-ef4876826262" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/c1865f068fd503a3501196e578584c6f1bbfdf535dadba4eaac153fd4b01e42a.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/456bb1e1-3ffc-4b1f-be24-8437e3a2c886" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/f7b3c72d24b88709d44601992250169a91df282991a16eb8908dc72f443bec1b.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/ed614406-8550-4f54-a1d1-8edb10c8b06a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/d046e08bc5fcb985e2a326429640f672013bc3b99bd6ae8d6b8418a71ca01d38.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/0aad709a-71fe-41e5-8433-63b2111be67a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/6dfc85c3f2f2fc2acd3d5efdd91a6d65e83e406be8b25fbae1e183e644ee8361.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/91477e94-5bb9-42de-9325-1df1bd96d7d2" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/288066e6990db6f6724bc2f4d9f0eba068289c9e67991c5dcc00d5673d503fcb.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/6b49d70b-5a99-46af-84e7-2966a65a4099" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/64a0614981f350d5d0426c702c8fd5754c183a67ab67c8336d80dcf50b1aae4a.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/2efca23c-eb2a-4585-a395-92ac5c64974b" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/496eb847267a1e823b74b1b4517011e161743459fcba0a87ad797359df1cad50.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/02e72c15-97be-41a5-bc75-ec25e11a9ddb" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/7b215bbb0b5cc7fc8490b25c6ce274b5dd699dd0b0f08105f818a77e08beb97a.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/f8f18250-a11e-4884-896b-e81dae7e0030" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/10f3b98b53f189f28280145f36ed2f05e9a552908e8bea1522912e029a228d0c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                   <a href="https://www.amazon.in/minitv/tp/767238ad-e54f-461c-8612-00f7de938466" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/70455ddcfc42bd66390b98616c0aeae5e8219f3f05d7798afa9906313a6f767c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+            </div>
+            </div>
+
+            <div class="div9">
+            <div class="x" style="color:white;font-size: 20px;margin-left: 30px;"><b>Mini Movie Mania</b></div>
+            <div class="sub1">
+                    <a href="https://www.amazon.in/minitv/tp/dec3c835-ea44-48d7-a63a-7e1912c94e15" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/3ac87db700ae6e8e5cc2674baa23b9a87aed68935e32d671ed00cd3138490d1e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/a9ce25d2-22d4-40ed-9ff4-b8eee02651d0" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/6a3418b5f7c042b26eaf787af0fe1b279f9c161ed93402b9da177575804be3ac.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/7fabd9e3-119e-4ab4-afe4-7ddf81953c3d" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/99805d20be408dd1518cdacbb9a6a24b2425395f24c62ed98e22cfd2f49df620.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/ae5c5a39-cfc3-4cf6-b47e-c05b5ed8dc6e" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/29f491d5dc1f588ed232bd9dee9d05b137629a33583412ec6c563a84874a5456.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/a80166fd-df98-4637-821a-0edfffc0486e" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/62be32760f8e53b9750ed674dbf711c389735db576721fdbd7ea51f60796c498.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/b8235130-a88c-4fd6-a190-d5227a19d33c" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/70dd6cb79e313e0579af5965f9ebf14c5c0e1247c1aff5e719c113377256722c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/280d2564-584f-452f-9c98-7baf906e01ab" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/8556086a587df80a8a20e8ea0719daf797f589cd8b6d61db41c7925a3f3bfa06.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/e2e38e7a-cf0c-4382-b21c-ed4052570435" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/2efdaaf7e87180568187be8d6d4da73f3d94a6cccdc04c919e6bb9ecee4f709b.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/fef8fd8b-b7fe-4ba0-87f4-896ff3efb006" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/3c5da64d60b99fc69073de51eb6a684c615343130d2141664a4197833b4bb2bd.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    <a href="https://www.amazon.in/minitv/tp/2380b78c-2a91-4ef7-b988-f841fcccac23" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/b614a5175e4c2e4372a2f5ee564e6c59f464bd311793c0ce099c0d3dac8876f1.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+            </div>
+            </div>
+
+            <div class="div10">
+            <div class="x" style="color: aliceblue;font-size: 20px;margin-left: 30px;"><b>TVF original</b></div>
+            <div class="sub1">
+                     <a href="https://www.amazon.in/minitv/tp/e4bbebf4-e610-f5ef-b84c-cb63a81ac1c6" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/d9202f5bf1381ab37bbc789ca9005e251bb209a4ca3c96ca6e2f00150ce828ea.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/12eb62f8-1d76-436b-8f3a-e0dca68e52fc" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/4524df59b8e408fc35106fce1ddbc496fad69e47ac2f5110d4d61508c753c29e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/74bbdfd6-8f19-0f8a-2ac7-2e4be3868227" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/8e8ad9669884c8f9c87e663c670fdbe925fcebccf5fd71adb99d0ee53dc3d842.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/be3fd3c2-de7e-4c2f-b4f2-ef666cffbe7d" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/1c553578a1f19f8fc16d75cbd1645e3bd0e88c1469b78cdfb3f3416704a2953e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/36bbefcc-7aa9-06c7-2704-535e8f8f0a9a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/954d9eced0c599a189303f202b365f216366bc46ee490ea12d89515755a792c0.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/c6bbdff2-880e-c425-3185-e5acf96212f2" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/e2dca4fc4b9241cd31e49afd71797d996e8a2fd5b02748dc957bf633c9c2a9ca.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/90959763-7266-408c-9498-205786236e60" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/aef994ad8d777c23a1c96f0548e45c83661cc19cc6ebe7970ce256651b26f78e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/69ab70fc-a098-4924-8d15-7d0144078d40" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/a938a35067b42d4b6bfcd0b236046f66a7f956621757ef14e67ab9943871d553.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt=""style="width: 280px; height: 160px;"></a>
+            </div>
+            </div>
+
+            <div class="div11">
+            <div class="x" style="color: aliceblue;font-size: 20px;margin-left: 30px;"><b>Comedy Dhamaaka</b></div>
+            <div class="sub1">
+                     <a href="https://www.amazon.in/minitv/tp/e59f086a-d587-444e-9fa6-a1458af27fad" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/679fc1dfcf4369e0a783c9fae8383f325acc8dfe2f2dcfd23ee5e8c62706481e.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/13e7e4a9-63bb-4e23-b8cd-6e8fb235571a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/2062f34a75ac61a27ba460289f0d6f80fd89cb5df2fecf2d3e8f94831914e64f.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/6012db3e-da98-4a9e-b829-f4aecf554ae3" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/9729530448c11d5489ea0c6b008040f2543ec2780adfb3e675986453a8e3f592.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/54868701-6e59-4d5d-928d-729e12625d27" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/92d1e287d717cb4a478a7e5781bd45d8b6dc279507cfc8111f74d541d1a9a343.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/2a6c39f8-4bb6-42d6-b603-ccd100e93339" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/7ac40d3797dbb73fcb104f88da774310adfd68e996b6b0368721e64a03dc0e77.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/7e24716c-da84-4da3-a6e1-a3ac1bb6bf46" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/657755f2426337f09f9898bd51fff896e0c9fc07492c6df9bd00d69f8406af7a.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/0f789273-3c1d-445e-8eae-f65508a68d83" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/ad84a642b2f43dc64417ac960641654824259d65dd2847bfb555d4c89648ce45.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/0bc16c61-8ede-4521-ae04-d45c83313c8c" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/f4525e99f36321a4b060d86cda2a61a2d8fb3d1210b15a7e1c3473988cb72151.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.png" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/2701a9e8-b057-40dc-8e3a-e8cb3013afa4" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/97d0ce67a54e1b7686ece8402a1e30e593940834e447daae18c7c9228f7c9e5a.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/767238ad-e54f-461c-8612-00f7de938466" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/70455ddcfc42bd66390b98616c0aeae5e8219f3f05d7798afa9906313a6f767c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                    </div>
+            </div>
+
+            <div class="div12">
+            <div class="x" style="color: aliceblue;font-size: 20px;margin-left: 30px;"><b>Hidden Gems</b></div>
+            <div class="sub1">
+                     <a href="https://www.amazon.in/minitv/tp/6c6398ce-ca43-4233-b32b-650c20e66706" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/a8d1a84c645a959efc7e9591edc04b7d56af8584ee49abf87b606835ea0d0906.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 260px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/a53878f0-cd3b-485c-8666-d4e37cf7eaad" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/87640e37f0624c48e1c2c17198e817f59776f791ba284cefbb1d7d3501d34713.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/ed614406-8550-4f54-a1d1-8edb10c8b06a" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/d046e08bc5fcb985e2a326429640f672013bc3b99bd6ae8d6b8418a71ca01d38.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/d4ca34f1-1434-4438-8492-453f71ef7c07" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/1de1f70889d8b47dac283982205153c3fe43f178e8d2d621442cc49a66933e88.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/7bf5bd57-1511-426f-99c1-00de7abf6fe7" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/2d8403ad24a8daf51004d53a3f14a4a8600aa2067b1dccbbf1621e69a7352a46.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/ceae2ece-0ead-401b-84c0-eceaee7996f5" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/cff895a3ab9dab543bfaee31f0275009f75dafce5d486e06923c1297cdb6056f.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/934c89d0-8820-4a21-b8be-2accfad8e69d" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/909ed98fec14b3617d9b699b39798d8cbeedce1c6ca5631e2a5589ae0385a558.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/d95ce386-7bcd-44be-8ca3-6f782eec6f97" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/62eab67dcbfaf43c91219451406e068ded2477a5e31fdf4a642527040d43496f.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/4c5394d0-d6bc-4d8d-9c3b-074977c4a1c2" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/388c719c83e0f42c8f89275a65a70426107949130547229c7ba965742a63500c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/a9ce25d2-22d4-40ed-9ff4-b8eee02651d0" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/6a3418b5f7c042b26eaf787af0fe1b279f9c161ed93402b9da177575804be3ac.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+            </div>
+            </div>
+
+            <div class="div13">
+            <div class="x" style="color: aliceblue;font-size: 20px;margin-left: 30px;"><b>Top Rated Series & Mini Movies on IMDb</b></div>
+            <div class="sub1">
+
+                     <a href="https://www.amazon.in/minitv/tp/2de3908c-f305-43af-bc67-f14bd10c4373" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/45bdabe394095dd9640c498c438dee5c3aeb72f66199153d12ec0a392c740dae.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/2d6a8180-0b1b-475d-95ba-a53777d89486" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/0e7d48840b23ce7f7220b28a9d18cd1a08742b4f8e7b697f0e48e3881b27ee8f.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>/
+                     <a href="https://www.amazon.in/minitv/tp/debbf698-583d-e7f3-20ea-bc487c8c7bea" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/b3cc5796dfccecf9ba4c1fc2b4fdcb5aea03a8fec3a250b0425af02a14af3f8f.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/e4bbebf4-e610-f5ef-b84c-cb63a81ac1c6" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/d9202f5bf1381ab37bbc789ca9005e251bb209a4ca3c96ca6e2f00150ce828ea.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/9fdbdeeb-f6cf-47b0-942b-7dcda3ceb7e2" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/8549d47bbd7a9b82612540fc10c9fc9cc9f8b4f7952914351d10a85e9c61515c.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/fef8fd8b-b7fe-4ba0-87f4-896ff3efb006" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/3c5da64d60b99fc69073de51eb6a684c615343130d2141664a4197833b4bb2bd.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     <a href="https://www.amazon.in/minitv/tp/2380b78c-2a91-4ef7-b988-f841fcccac23" target="_blank"><img src="https://m.media-amazon.com/images/S/pv-target-images/b614a5175e4c2e4372a2f5ee564e6c59f464bd311793c0ce099c0d3dac8876f1.__SX363.0000078678131__SY204.60000443458557__QL60__._TTH_.jpg" alt="" style="width: 280px; height: 160px;"></a>
+                     
+            </div>
+            </div>
+            <div class="div3">
+                <div class="parent2">
+                    <ul>
+                       <li class="list1"> <a href="#" class="hover"> <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTU4IDMyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTIuNTM3MSAyMy4wNDkyQzEyLjE0MSAyMi43MzEyIDEyLjQ5MzUgMjIuMjk1MiAxMi45NjQ4IDIyLjU0MTJDMTguMzc3OSAyNS4zNjAyIDI1LjA2NTUgMjcuMDU4MiAzMS45NzY3IDI3LjA1ODJDMzYuNjM4IDI3LjA1ODIgNDEuNzYyIDI2LjE5MjIgNDYuNDc3OCAyNC40MDIyQzQ3LjE4ODIgMjQuMTMxMiA0Ny43ODM5IDI0LjgyMTIgNDcuMDg4OSAyNS4yODEyQzQyLjg4MzYgMjguMDU5MiAzNi43ODUzIDI5LjUzNjIgMzEuNTM0OCAyOS41MzYyQzI0LjE3NjIgMjkuNTM2MiAxNy41NTIgMjcuMTAyMiAxMi41MzYgMjMuMDQ5MkgxMi41MzcxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQzLjgyNDIgMjIuODM1MUM0Ni4yMzAxIDIxLjMyMTEgNTAuMTc0NiAyMS43NTcxIDUwLjYzMjkgMjIuMjY1MUM1MS4wOTU1IDIyLjc3NTEgNTAuNTExNyAyNi4zMTgxIDQ4LjI1NjQgMjguMDA1MUM0Ny45MDk0IDI4LjI2NzEgNDcuNTc3NyAyOC4xMjcxIDQ3LjczMjYgMjcuNzg1MUM0OC4yNCAyNi42NTAxIDQ5LjM3NyAyNC4xMTExIDQ4LjgzNzkgMjMuNDkyMUM0OC4zMDExIDIyLjg3NTEgNDUuMjgxOSAyMy4xOTkxIDQzLjkyNTYgMjMuMzQ2MUM0My41MTY1IDIzLjM4OTEgNDMuNDUzMiAyMy4wNjgxIDQzLjgyNDIgMjIuODM2MVYyMi44MzUxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTcuNTY1OSA5Ljc3NjEyQzguNjU4MTIgOS43NzYxMiAxMC4wODMxIDEwLjAzNjEgMTAuOTQxOSAxMC43NzMxQzEyLjAzMyAxMS42ODUxIDExLjkyNzIgMTIuOTAxMSAxMS45MjcyIDE0LjIyMzFWMTcuMzQ4MUMxMS45MjcyIDE4LjI4ODEgMTIuMzYzNiAxOC43MDAxIDEyLjc3MjggMTkuMjA4MUMxMi45MTU3IDE5LjM5MTEgMTIuOTQ3NCAxOS42MDgxIDEyLjc2NTEgMTkuNzQxMUMxMi4xODY1IDIwLjE3OTIgMTEuNjEzNiAyMC42MjM1IDExLjA0NjYgMjEuMDc0MUMxMC44OTI4IDIxLjE4MzQgMTAuNjgzMSAyMS4xOTkxIDEwLjUxMiAyMS4xMTQxQzkuNzY5OTggMjAuNTYyMSA5LjYzNDY4IDIwLjMwNTEgOS4yMjc2OSAxOS43NzkxQzcuOTk3OTkgMjAuOTAwMSA3LjEyNzI2IDIxLjIzNTEgNS41MzYzOSAyMS4yMzUxQzMuNjQ4NzMgMjEuMjM2MSAyLjE4MjI1IDIwLjE5NjEgMi4xODIyNSAxOC4xMTIxQzIuMTgyMjUgMTYuNDgzMSAzLjE2NzU0IDE1LjM3NDEgNC41NzE4MyAxNC44MzIxQzUuNzg1MTcgMTQuMzU1MSA3LjQ4NDA2IDE0LjI2ODEgOC43ODM2IDE0LjEzODFWMTMuODc4MUM4Ljc4MzYgMTMuNDAyMSA4LjgyNTA2IDEyLjgzNDEgOC41MTA4MiAxMi40MjIxQzguMjM4MDMgMTIuMDU0MSA3LjcxNDI5IDExLjkwMTEgNy4yNTM4MyAxMS45MDExQzYuNDAwNTcgMTEuOTAxMSA1LjY0MDA1IDEyLjI5MzEgNS40NTIzNyAxMy4xMDYxQzUuNDEzMDkgMTMuMjg3MSA1LjI2Njg4IDEzLjQ2NjEgNS4wNjM5MyAxMy40NzQxTDIuODkyNTggMTMuMjY0MUMyLjcwOTI3IDEzLjIyNzEgMi41MDUyMyAxMy4wOTUxIDIuNTU4NjkgMTIuODQ2MUMzLjA0MTI1IDEwLjU2MjMgNS4yODU1MiA5LjgyMzY1IDcuMzYwMTYgOS43NzgzN0w3LjU2NTkgOS43NzYxMlpNOC43ODM2IDE1Ljc0MzFDNy4xNjMyNyAxNS43NDMxIDUuNDUwMTkgMTYuMDU0MSA1LjQ1MDE5IDE3Ljc2MzFDNS40NTAxOSAxOC42MzExIDUuOTUzMiAxOS4yMTgxIDYuODE0MTEgMTkuMjE4MUM3LjQ0MjYgMTkuMjE4MSA4LjAwODkgMTguODcxMSA4LjM2NDYxIDE4LjMwNTFDOC44MDMyNCAxNy42MTExIDguNzgzNiAxNi45NjAxIDguNzgzNiAxNi4xNzkxVjE1Ljc0MzFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTguNTY2NSA5Ljg3MzA1QzYxLjg5MjIgOS44NzMwNSA2My42OTE1IDEyLjQzIDYzLjY5MTUgMTUuNjc5QzYzLjY5MTUgMTguODE5IDYxLjcwNDYgMjEuMzExIDU4LjU2NjUgMjEuMzExQzU1LjMwNCAyMS4zMTEgNTMuNTI3NiAxOC43NTUgNTMuNTI3NiAxNS41NzFDNTMuNTI3NiAxMi4zNjQgNTUuMzI1OCA5Ljg3MzA1IDU4LjU2NjUgOS44NzMwNVpNNTguNTg3MiAxMS45NzRDNTYuOTkzMyAxMS45NzQgNTYuODM5NiAxMy44NTI1IDU2LjgzMDkgMTUuMTEzNEw1Ni44MzA1IDE1LjUwNkM1Ni44MzQ5IDE2LjgzNiA1Ni45MjQzIDE5LjE4NyA1OC41NjU0IDE5LjE4N0M2MC4zMDM2IDE5LjE4NyA2MC4zODU0IDE3LjAyMiA2MC4zODU0IDE1LjdDNjAuMzg1NCAxNC44MzQgNjAuMzQ1IDEzLjc5NCA2MC4wNTE1IDEyLjk3MkM1OS43OTk1IDEyLjI1NiA1OS4yOTg2IDExLjk3NSA1OC41ODcyIDExLjk3NVYxMS45NzRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzYuOTM3IDkuNzc2MTJDMzguMDI4MSA5Ljc3NjEyIDM5LjQ1MSAxMC4wMzYxIDQwLjMxMDggMTAuNzczMUM0MS4zNDEzIDExLjYzNDUgNDEuMzA0MSAxMi43NjcgNDEuMjk2OCAxNC4wMDM4TDQxLjI5NjEgMTcuMzQ4MUM0MS4yOTYxIDE4LjI4ODEgNDEuNzMyNSAxOC43MDAxIDQyLjE0MTcgMTkuMjA4MUM0Mi4yODM1IDE5LjM5MTEgNDIuMzE2MyAxOS42MDgxIDQyLjEzNDEgMTkuNzQxMUM0MS45NjIyIDE5Ljg2OTQgNDEuNzQwNiAyMC4wMzg4IDQxLjUwNzIgMjAuMjE5M0w0MS4wMzU4IDIwLjU4NjFDNDAuODAzNCAyMC43Njc5IDQwLjU4NDQgMjAuOTQwNiA0MC40MTY2IDIxLjA3NDFDNDAuMjYyNyAyMS4xODMgNDAuMDUzNSAyMS4xOTkgMzkuODgyIDIxLjExNTFDMzkuMTM2NyAyMC41NjIxIDM5LjAwMzYgMjAuMzA1MSAzOC41OTc3IDE5Ljc3OTFDMzcuMzY4IDIwLjkwMDEgMzYuNDk2MiAyMS4yMzUxIDM0LjkwMiAyMS4yMzUxQzMzLjAxNzYgMjEuMjM1MSAzMS41NTIyIDIwLjE5NTEgMzEuNTUyMiAxOC4xMTIxQzMxLjU1MjIgMTYuNDgzMSAzMi41MzQzIDE1LjM3MzEgMzMuOTM5NiAxNC44MzExQzM1LjE1NjMgMTQuMzU1MSAzNi44NTMgMTQuMjY4MSAzOC4xNTE0IDE0LjEzODFWMTMuODc4MUMzOC4xNTE0IDEzLjQwMjEgMzguMTk1MSAxMi44MzUxIDM3Ljg3ODYgMTIuNDIyMUMzNy42MDU5IDEyLjA1NDEgMzcuMDgyMSAxMS45MDIxIDM2LjYyMzggMTEuOTAyMUMzNS43NjczIDExLjkwMjEgMzUuMDA3OSAxMi4yOTQxIDM0LjgyMjQgMTMuMTA2MUMzNC43ODA5IDEzLjI4NzEgMzQuNjM1OCAxMy40NjYxIDM0LjQzMjggMTMuNDc1MUwzMi4yNjE1IDEzLjI2MzFDMzIuMDc2IDEzLjIyNzEgMzEuODczIDEzLjA5NTEgMzEuOTI1NCAxMi44NDYxQzMyLjQyNTIgMTAuNDg2MSAzNC44MDM4IDkuNzc2MTIgMzYuOTM3IDkuNzc2MTJaTTM4LjE1MjUgMTUuNzQ0MUMzNi41MzExIDE1Ljc0NDEgMzQuODE5MSAxNi4wNTQxIDM0LjgxOTEgMTcuNzY0MUMzNC44MTkxIDE4LjYzMTEgMzUuMzIzMiAxOS4yMTkxIDM2LjE4MyAxOS4yMTkxQzM2LjgxMDQgMTkuMjE5MSAzNy4zNzU2IDE4Ljg3MTEgMzcuNzMyNCAxOC4zMDUxQzM4LjE3MzIgMTcuNjExMSAzOC4xNTE0IDE2Ljk2MDEgMzguMTUxNCAxNi4xNzkxTDM4LjE1MjUgMTUuNzQ0MVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNi40NDAzIDkuODczMDVDMjcuMzc5NyA5Ljg3MzA1IDI4LjQwNjUgMTAuMjIyIDI5LjAzMjggMTEuMDAxQzI5Ljc0MzEgMTEuODY1IDI5LjU5OCAxMy4xMjQgMjkuNTk4IDE0LjIyN0wyOS41OTU4IDIwLjcyNEMyOS41OTU4IDIwLjkzMSAyOS40MDE2IDIxLjA5NCAyOS4xNjU5IDIxLjA5NEgyNi45MjY5QzI2LjcwNjkgMjEuMDg5OCAyNi41Mjk1IDIwLjkyNzcgMjYuNTI0MyAyMC43MjZMMjYuNTIzMiAxNS4yNjZDMjYuNTIzMiAxNC44MzQgMjYuNTY1OCAxMy43NSAyNi40NjEgMTMuMzM5QzI2LjI5MyAxMi42NDUgMjUuNzkxMSAxMi40NTEgMjUuMTQ0IDEyLjQ1MUMyNC41NTQgMTIuNDYzMiAyNC4wMjc5IDEyLjc5NDYgMjMuODA0MSAxMy4yOTVDMjMuNjI1MiAxMy43MDEgMjMuNTk3OSAxNC4zMTUgMjMuNTk0NiAxNC44NDJWMjAuNzI0QzIzLjU5NDYgMjAuOTMxIDIzLjQwMjYgMjEuMDk0IDIzLjE2MzYgMjEuMDk0SDIwLjkyNjhDMjAuNzA2OCAyMS4wODkzIDIwLjUyOTQgMjAuOTI3NiAyMC41MjMxIDIwLjcyNkwyMC41MjA5IDE1LjI2NkMyMC41MjA5IDE1LjEwMyAyMC41MjUzIDE0LjkyOCAyMC41Mjc0IDE0Ljc0OEwyMC41Mjk2IDE0LjQ3NkMyMC41Mjg1IDEzLjQ3MiAyMC4zOTEgMTIuNDMgMTkuMTQyOCAxMi40M0MxNy43MDI1IDEyLjQzIDE3LjU5OTkgMTMuNzQzIDE3LjU5MzQgMTQuODcxVjIwLjcyNEMxNy41OTM0IDIwLjkzMSAxNy4zOTkyIDIxLjA5NCAxNy4xNjAyIDIxLjA5NEgxNC45MjAxQzE0LjcxMzcgMjEuMDg4MiAxNC41NDM1IDIwLjk0NDEgMTQuNTIwOCAyMC43NTZWMTAuNDZDMTQuNTIwOCAxMC4yNTUgMTQuNzE1IDEwLjA5IDE0Ljk1MzkgMTAuMDlIMTcuMDQwMkMxNy4yNTg0IDEwLjEwMiAxNy40MzMgMTAuMjQ4IDE3LjQ0NzIgMTAuNDM3VjExLjc4SDE3LjQ4OTdDMTguMDMyIDEwLjQ4IDE5LjA1NzcgOS44NzMwNSAyMC40MzggOS44NzMwNUMyMS44MzkgOS44NzMwNSAyMi43MTczIDEwLjQ4IDIzLjM0NTggMTEuNzhDMjMuODg5MiAxMC40OCAyNS4xMjExIDkuODczMDUgMjYuNDM5MiA5Ljg3MzA1SDI2LjQ0MDNaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNzEuMzY2NSA5Ljg3MzA1QzcyLjM3MDQgOS44NzMwNSA3My4zNTM1IDEwLjE5OSA3My45Nzk4IDExLjA4OEM3NC41NjY4IDExLjkxMSA3NC41NjY4IDEzLjI5NSA3NC41NjY4IDE0LjI5MVYyMC43NjlDNzQuNTQxNyAyMC45NTQgNzQuMzU5NSAyMS4wOTQgNzQuMTM2OSAyMS4wOTRINzEuODkwM0M3MS42ODkyIDIxLjA4ODMgNzEuNTIxNSAyMC45NTE0IDcxLjQ5MiAyMC43NjlWMTUuMDU5QzcxLjUwMDcgMTMuOTM5IDcxLjU4NDggMTIuNDA5IDcwLjA5MSAxMi40MDlDNjkuNTQ2NSAxMi40MDkgNjkuMDQ0NiAxMi43MzQgNjguNzk1OCAxMy4yMzFDNjguNDc5NCAxMy44NTkgNjguNDM5IDE0LjQ4OSA2OC40MzkgMTUuMTgxVjIwLjcyNEM2OC40MzQ2IDIwLjkzMSA2OC4yNDA0IDIxLjA5NCA2OC4wMDI2IDIxLjA5NEg2NS43NzEyQzY1LjU1MTIgMjEuMDg5OCA2NS4zNzM4IDIwLjkyNzcgNjUuMzY4NiAyMC43MjZMNjUuMzY0MiAxMC40MjVDNjUuMzgyNyAxMC4yMzcgNjUuNTcwNCAxMC4wOTEgNjUuNzk0MSAxMC4wOTFINjcuODcyN0M2OC4wNjkxIDEwLjEwMSA2OC4yMjk1IDEwLjIxNyA2OC4yNzIxIDEwLjM4MVYxMS45NTRINjguMzEyNEM2OC45NDA5IDEwLjU0NCA2OS44MTkzIDkuODc0MDUgNzEuMzY2NSA5Ljg3NDA1VjkuODczMDVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTEuODAyNiAxMC4wNjMxQzUyLjAzOTMgMTAuMDYzMSA1Mi4yMjgxIDEwLjIxNzEgNTIuMjI4MSAxMC40MzUxVjExLjY5NzFDNTIuMjI0OCAxMS45MDkxIDUyLjAyNjIgMTIuMTgzMSA1MS42NzM4IDEyLjYyMzFMNDcuODU3IDE3LjQ5NjFDNDkuMjczMyAxNy40NjgxIDUwLjc3MDQgMTcuNjU3MSA1Mi4wNTc5IDE4LjMwNDFDNTIuMzQ3IDE4LjQ1MTEgNTIuNDI1NiAxOC42NjcxIDUyLjQ0ODUgMTguODgxMVYyMC40NDcxQzUyLjQ0ODUgMjAuNjY1MSA1Mi4xODQ1IDIwLjkxNTEgNTEuOTA2MiAyMC43ODQxQzQ5LjYzOTkgMTkuNzIxMSA0Ni42MzE3IDE5LjYwNDEgNDQuMTI0MyAyMC43OTcxQzQzLjg2ODkgMjAuOTIwMSA0My42MDA1IDIwLjY3NTEgNDMuNjAwNSAyMC40NTcxVjE4Ljk2NjFDNDMuNjAwNSAxOC43MjgxIDQzLjYwNiAxOC4zMTgxIDQzLjg3NDQgMTcuOTUzMUw0OC4yOTQ2IDEyLjI4MDFINDQuNDQ2MkM0NC4yMTE2IDEyLjI4MDEgNDQuMDIyOCAxMi4xMjgxIDQ0LjAyMDYgMTEuOTEwMVYxMC40MzYxQzQ0LjAxODcgMTAuMzM1IDQ0LjA2MjQgMTAuMjM3OCA0NC4xNDEyIDEwLjE2NzJDNDQuMjIwMSAxMC4wOTY2IDQ0LjMyNzMgMTAuMDU4OSA0NC40Mzc0IDEwLjA2MzFINTEuODAyNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik05My4zODc4IDIxVjEzLjQ4OEM5My4zODc4IDEyLjUwMzggOTIuOTQ2NCAxMi4wMTE2IDkyLjA2MzUgMTIuMDExNkM5MS4yODE5IDEyLjAxMTYgOTAuNDkzIDEyLjE5OTggODkuNjk3IDEyLjU3NjFWMTIuNzkzMlYyMUg4Ni41MjcyVjEzLjQ4OEM4Ni41MjcyIDEyLjUwMzggODYuMDg1NyAxMi4wMTE2IDg1LjIwMjggMTIuMDExNkM4NC4zOTIyIDEyLjAxMTYgODMuNTk2MiAxMi4yMDcgODIuODE0NiAxMi41OTc4VjIxSDc5LjY0NDhWOS45MDU2OEg4Mi4yNTAxTDgyLjUzMjMgMTAuOTY5NUM4My4yOTk1IDEwLjQ2MjkgODMuOTg3IDEwLjEwODMgODQuNTk0OSA5LjkwNTY4Qzg1LjIxNzMgOS42ODg1NyA4NS44NTQxIDkuNTgwMDEgODYuNTA1NCA5LjU4MDAxQzg3LjgwODEgOS41ODAwMSA4OC43MjcyIDEwLjA0MzIgODkuMjYyNyAxMC45Njk1QzkwLjAwMDkgMTAuNDc3NCA5MC42OTU3IDEwLjEyMjggOTEuMzQ3IDkuOTA1NjhDOTEuOTk4MyA5LjY4ODU3IDkyLjY3MTQgOS41ODAwMSA5My4zNjYxIDkuNTgwMDFDOTQuMzc5MyA5LjU4MDAxIDk1LjE2MDkgOS44NjIyNiA5NS43MTA5IDEwLjQyNjdDOTYuMjc1NCAxMC45OTEyIDk2LjU1NzYgMTEuNzgwMSA5Ni41NTc2IDEyLjc5MzJWMjFIOTMuMzg3OFpNOTkuNjQwNCAyMVY5LjkwNTY4SDEwMi44MVYyMUg5OS42NDA0Wk0xMDEuMjI1IDguMTkwNTFDMTAwLjY3NSA4LjE5MDUxIDEwMC4yMzQgOC4wMzg1MyA5OS45MDEgNy43MzQ1OEM5OS41NjgxIDcuNDMwNjIgOTkuNDAxNiA3LjAxODExIDk5LjQwMTYgNi40OTcwNUM5OS40MDE2IDUuOTc1OTkgOTkuNTY4MSA1LjU2MzQ4IDk5LjkwMSA1LjI1OTUyQzEwMC4yMzQgNC45NTU1NyAxMDAuNjc1IDQuODAzNTkgMTAxLjIyNSA0LjgwMzU5QzEwMS43NzUgNC44MDM1OSAxMDIuMjE3IDQuOTU1NTcgMTAyLjU1IDUuMjU5NTJDMTAyLjg4MyA1LjU2MzQ4IDEwMy4wNDkgNS45NzU5OSAxMDMuMDQ5IDYuNDk3MDVDMTAzLjA0OSA3LjAxODExIDEwMi44ODMgNy40MzA2MiAxMDIuNTUgNy43MzQ1OEMxMDIuMjE3IDguMDM4NTMgMTAxLjc3NSA4LjE5MDUxIDEwMS4yMjUgOC4xOTA1MVpNMTEzLjA1NyAyMVYxMy43MjY4QzExMy4wNTcgMTMuMTMzNCAxMTIuOTI2IDEyLjY5OTIgMTEyLjY2NiAxMi40MjQyQzExMi40MDUgMTIuMTQ5MSAxMTIuMDA3IDEyLjAxMTYgMTExLjQ3MiAxMi4wMTE2QzExMC42NzYgMTIuMDExNiAxMDkuODg3IDEyLjI1NzcgMTA5LjEwNSAxMi43NDk4VjIxSDEwNS45MzVWOS45MDU2OEgxMDguNTQxTDEwOC44NDUgMTEuMDk5OEMxMTAuMTQ3IDEwLjA4NjYgMTExLjUzNyA5LjU4MDAxIDExMy4wMTMgOS41ODAwMUMxMTQuMDQxIDkuNTgwMDEgMTE0LjgzIDkuODYyMjYgMTE1LjM4IDEwLjQyNjdDMTE1Ljk0NCAxMC45NzY4IDExNi4yMjYgMTEuNzY1NiAxMTYuMjI2IDEyLjc5MzJWMjFIMTEzLjA1N1pNMTE5LjMxNiAyMVY5LjkwNTY4SDEyMi40ODZWMjFIMTE5LjMxNlpNMTIwLjkwMSA4LjE5MDUxQzEyMC4zNTEgOC4xOTA1MSAxMTkuOTA5IDguMDM4NTMgMTE5LjU3NyA3LjczNDU4QzExOS4yNDQgNy40MzA2MiAxMTkuMDc3IDcuMDE4MTEgMTE5LjA3NyA2LjQ5NzA1QzExOS4wNzcgNS45NzU5OSAxMTkuMjQ0IDUuNTYzNDggMTE5LjU3NyA1LjI1OTUyQzExOS45MDkgNC45NTU1NyAxMjAuMzUxIDQuODAzNTkgMTIwLjkwMSA0LjgwMzU5QzEyMS40NTEgNC44MDM1OSAxMjEuODkyIDQuOTU1NTcgMTIyLjIyNSA1LjI1OTUyQzEyMi41NTggNS41NjM0OCAxMjIuNzI1IDUuOTc1OTkgMTIyLjcyNSA2LjQ5NzA1QzEyMi43MjUgNy4wMTgxMSAxMjIuNTU4IDcuNDMwNjIgMTIyLjIyNSA3LjczNDU4QzEyMS44OTIgOC4wMzg1MyAxMjEuNDUxIDguMTkwNTEgMTIwLjkwMSA4LjE5MDUxWk0xMjguOTMzIDIxVjguNTU5NkgxMjQuMzUyVjUuOTU0MjhIMTM2Ljc3VjguNTU5NkgxMzIuMTg5VjIxSDEyOC45MzNaTTE0My4xNTMgMjFMMTM3LjgxMiA1Ljk1NDI4SDE0MS40MTZMMTQ0LjkzMyAxNy44MDg1TDE0OC40MjkgNS45NTQyOEgxNTEuOTQ2TDE0Ni42MDUgMjFIMTQzLjE1M1oiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8yNjRfMzU1KSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzI2NF8zNTUiIHgxPSIxNTYuMjUiIHkxPSIwIiB4Mj0iNzguMTI1IiB5Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRTkwQjhDIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0QyMUY0OSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPg==" alt="" style="width:175px; height:48px; margin-top: -0px; margin-left: -15px; background-color: transparent;"></a>
+                       <li class="list1"> <a href="#" class="hover"> <img src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Young_Janta_ko_yahi_mangta.png" alt="" style="width:293px; height:25px; margin-top: 6px; margin-left:-35px;"></a>
+                       <li class="list1"> <a href="#" class="hover"> <a href="https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping" target="_blank"><img src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Web/images/play-store-icon.svg" alt="" style="width:150px; height:50px; margin-top: -5px; margin-right:1500px; margin-left: -20px;"></a></a>
+                       <li class="list1"> <a href="#" class="hover"> <a href="https://apps.apple.com/in/app/amazon-india-shop-and-pay/id1478350915" target="_blank"><img src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Web/images/app-store-icon.svg" alt="" style="width:150px; height:50px; margin-top: -5px; margin-left:-1530px;"></a></a>
+                       <li class="list1"> <a href="#" class="hover"> <img src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/qrcode.jpeg" alt="Scan this QR Code to download the app now" style="width:150px; height:150px; margin-left:-1331px;"></a>
+                       <li class="list">  <a href="https://twitter.com/amazonminiTV" target="_blank"><i class="fa fa-twitter" style="font-size: 30px; color:rgb(255, 255, 255);margin-top: -5px; margin-left:-1129px;" class="h"></a></i>
+                       <li class="list">  <a href="https://www.instagram.com/amazonminitv/" target="_blank"><i class="fa fa-instagram" style="font-size: 30px; color:white;margin-top: -5px; margin-left:-1081px;" class="h"></a></i>
+                       <li class="list">  <a href="https://www.facebook.com/AmazonminiTV" target="_blank"><i class="fa fa-facebook" style="font-size: 30px; color:white;margin-top: -5px; margin-left:-1030px;" class="h"></a></i>
+                       <li class="list">  <a href="https://www.youtube.com/channel/UC1NtcHxG3wiyhtbbPmIaMnA" target="_blank"><i class="fa fa-youtube" style="font-size: 30px; color:white; margin-top:-5px; margin-left: -985px;" class="h"></a></i>
+                    </ul>   
+                </div>
+                </div>
+    </body>
+</html>   
